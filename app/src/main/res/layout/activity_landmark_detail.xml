@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/landmark_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="landmark Name" />
+
+    <TextView
+        android:id="@+id/landmark_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/landmark_name"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        tools:text="Landmark country" />
+
+    <TextView
+        android:id="@+id/landmark_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/landmark_country"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        tools:text="Landmark city" />
+
+    <TextView
+        android:id="@+id/landmark_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/landmark_city"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        tools:text="Landmark estimated age" />
+
+    <TextView
+        android:id="@+id/landmark_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/landmark_age"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        tools:text="Landmark height" />
+
+    <Button
+        android:id="@+id/openMapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/landmark_height"
+        android:layout_marginTop="16dp"
+        android:text="Show on Map"
+        android:padding="12dp"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>
